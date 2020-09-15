@@ -27,7 +27,7 @@
 		    <ul id="menu">
 		      <a href="index.html"><li>Home</li></a>
 		      <a href="#"><li>About This Project</li></a>
-		      <a href="form.html"><li>Submit a Sighting</li></a>
+		      <a href="#"><li>Submit a Sighting</li></a>
 		    </ul>
 		  </div>
 		</nav>
@@ -40,7 +40,22 @@
 		</header>
 
 		<section id="map">
-			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZhcOqsL_W46vbjzEtc8yVi2Q-OUds0Y1" width="70%" height="480"></iframe>
+      <form
+        action="https://formspree.io/xwkweogp"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label>
+          Your email:
+          <input type="text" name="_replyto">
+        </label>
+        <label>
+          Your file:
+          <input type="file" name="upload">
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
 		</section>
 
 		</section>

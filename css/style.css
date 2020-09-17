@@ -10,9 +10,13 @@ body{
 	background-color: #212226;
 	color: #FFF2EB;
 	overscroll-behavior-y: none;
-	overflow: hidden;
-
+	/* overflow: hidden; */
 }
+#mapsect{
+	height: 50vh;
+	width:75vw;
+}
+
 #navbar{
 	display: block;
 	float:left;
@@ -20,6 +24,17 @@ body{
 #contentright{
 margin-left: 350px;
 
+}
+#map{
+	height:100%;
+	width:100%;
+}
+header img {
+	padding-top: 100px;
+	width: 30vw;
+}
+p{
+	padding: 30px;
 }
 
 /*

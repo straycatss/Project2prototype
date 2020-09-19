@@ -26,8 +26,8 @@
 
 		    <ul id="menu">
 		      <a href="index.html"><li>Home</li></a>
-		      <a href="#"><li>About This Project</li></a>
-		      <a href="#"><li>Submit a Sighting</li></a>
+		      <a href="aboutus.html"><li>About This Project</li></a>
+		      <a href="form.html"><li>Submit a Sighting</li></a>
 		    </ul>
 		  </div>
 		</nav>
@@ -36,7 +36,7 @@
 	<section id="contentright">
 		<header>
 			<img src="img/QARCHIVES_logo.png">
-			<p class="sub">Q-ARCHIVE will work to preserve the physical network of QR codes in Wellington</p>
+			<p class="sub"></p>
 		</header>
 
 		<section id="map">
@@ -45,16 +45,21 @@
         method="POST"
         enctype="multipart/form-data"
       >
+			<label>
+				<h2>Location where you spotted the code:
+				<input type="text" name="location">
+			</label><br><br>
         <label>
-          Your email:
-          <input type="text" name="_replyto">
-        </label>
+          Website that the code leads to:
+          <input type="text" name="website">
+        </label><br><br>
         <label>
-          Your file:
-          <input type="file" name="upload">
+          Please upload a high quality, square photo of the QR code you are submitting:
+          <br><input type="file" name="upload">
         </label>
 
         <button type="submit">Send</button>
+				       <br><br>Type of QR code: <br><select name="INBOUND" placeholder="INBOUND"><option>Sticker<option>Poster</select><br/>
       </form>
 		</section>
 

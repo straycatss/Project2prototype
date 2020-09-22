@@ -1,73 +1,91 @@
 <!DOCTYPE HTML>
 
 <html>
+
 <body>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>SUBMIT</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	 <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
-	 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-</head>
 
-<section id="content">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>SUBMIT</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+	</head>
 
-	<section id="navbar">
-		<!--    Made by Erik Terwan    -->
-		<!--   24th of November 2015   -->
-		<!--        MIT License        -->
-		<nav role="navigation">
-		  <div id="menuToggle">
-		    <input type="checkbox" />
+	<section id="content">
 
-		    <span></span>
-		    <span></span>
-		    <span></span>
+		<section id="navbar">
+			<!--    Made by Erik Terwan    -->
+			<!--   24th of November 2015   -->
+			<!--        MIT License        -->
+			<nav role="navigation">
+				<div id="menuToggle">
+					<input type="checkbox" />
 
-		    <ul id="menu">
-		      <a href="index.html"><li>Home</li></a>
-		      <a href="aboutus.html"><li>About This Project</li></a>
-		      <a href="form.html"><li>Submit a Sighting</li></a>
-		    </ul>
-		  </div>
-		</nav>
+					<span></span>
+					<span></span>
+					<span></span>
+
+					<ul id="menu">
+						<a href="index.html">
+							<li>Home</li>
+						</a>
+						<a href="aboutus.html">
+							<li>About This Project</li>
+						</a>
+						<a href="form.html">
+							<li>Submit a Sighting</li>
+						</a>
+					</ul>
+				</div>
+			</nav>
+		</section>
+
+		<div id="submitimg">	<img src="img/QARCHIVES_logo.png"></div>
+
+		<section id="contentright">
+	<header>
+				<p class="sub"></p>
+			</header>
+
+			<section id="map">
+				<h1>Submit a sighting of a QR code you have discvered in Wellington</h1>
+				<form class="formclass">
+					<fieldset>
+						<div id="formdiv">
+						<div class="row">
+							<div id="labelid"> <label for="aligned-name">Address where you spotted the code</label></div>
+							<input type="text" id="aligned" placeholder="Location" />
+						</div>
+						<div class="row">
+							<div id="labelid"><label for="aligned-password">Website that it leads to</label></div>
+							<input type="text" id="aligned" placeholder="Website Address" />
+						</div>
+						<div class="row">
+						<div id="labelid">	<label id="labelid" for="aligned-email">Photo</label></div>
+							<input type="file" id="aligned" />
+						</div>
+						<div class="row">
+						<div id="labelid">	<label id="labelid" for="aligned">Type</label></div>
+							<select name="Type">
+								<option>Sticker
+								<option>Poster
+							</select>
+						</div>
+						<div class="row">
+						<div id="plscenter"><button  type="submit">Submit Sighting</button></div>
+						</div>
+					</div>
+					</fieldset>
+				</form>
+			</section>
+
+		</section>
+
+
+
 	</section>
-
-	<section id="contentright">
-		<header>
-			<img src="img/QARCHIVES_logo.png">
-			<p class="sub"></p>
-		</header>
-
-		<section id="map">
-      <form
-        action="https://formspree.io/xwkweogp"
-        method="POST"
-        enctype="multipart/form-data"
-      >
-			<label>
-				<h2>Location where you spotted the code:
-				<input type="text" name="location">
-			</label><br><br>
-        <label>
-          Website that the code leads to:
-          <input type="text" name="website">
-        </label><br><br>
-        <label>
-          Please upload a high quality, square photo of the QR code you are submitting:
-          <br><input type="file" name="upload">
-        </label>
-
-        <button type="submit">Send</button>
-				       <br><br>Type of QR code: <br><select name="INBOUND" placeholder="INBOUND"><option>Sticker<option>Poster</select><br/>
-      </form>
-		</section>
-
-		</section>
-
-
-
-</section>
 </body>
 
 </html>
